@@ -1,0 +1,136 @@
+body, html{
+    background-color: #dfa8de3a;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+.banniere{
+    background-image: url("mangachatter/design/img/banniere.png");
+    background-repeat: no-repeat;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    font-size: 7rem;
+    color: #000; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+/* CENTRE */
+
+.centre{
+    background-color: white;
+    height: calc(375vh - 14rem); 
+    width: 66.66%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* ARTICLE */
+
+.article {
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(99, 40, 11);
+    border-radius: 1rem;
+    font-family: 'Zen Loop', cursive;
+}
+
+.titre{
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.description{
+    text-align: justify;
+}
+
+.date{
+    font-size: smaller;
+    color: gray;
+}
+
+/* FOOTER */
+.footer{
+    background-color: rgba(146, 210, 247, 0.832);
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    justify-content: space-between;
+}
+
+.rs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.logo{
+    display: flex;
+    height: 2rem;
+    justify-content: space-between;
+    margin: 0.1rem;
+}
+
+.regle{
+    font-family: 'Zen Loop', cursive;
+    color: white;
+    font-size: small;
+    text-align: end;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+/* ERREUR */
+
+.erreur{
+    font-family: 'Zen Loop', cursive;
+    text-align: center;
+    font-size: large;
+}
+
+.text-erreur{
+    font-weight: bold;
+}
+
+.retour-bouton{
+    font-family: 'Zen Loop', cursive;    
+    font-size: large;
+    cursor: pointer;
+}
+
+/* AUDIO */
+
+.audio{
+    display: none
+}
+
+/* RESPONSIVE */
+
+@media (min-width:800px) {
+
+    .banniere{
+        height: 12rem;
+        font-size: 10rem;
+    }
+
+    .centre{
+        height: calc(340vh - 14rem); 
+    }
+
+   }
